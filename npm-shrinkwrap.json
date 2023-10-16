@@ -12,7 +12,7 @@
         "fast-glob": "3.3.1",
         "js-yaml": "4.1.0",
         "snake-case": "3.0.4",
-        "undici": "5.22.1",
+        "undici": "5.26.2",
         "validator": "13.11.0",
         "yargs": "17.7.2"
       },
@@ -1025,6 +1025,14 @@
       "dev": true,
       "engines": {
         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+      }
+    },
+    "node_modules/@fastify/busboy": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/@fastify/busboy/-/busboy-2.0.0.tgz",
+      "integrity": "sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==",
+      "engines": {
+        "node": ">=14"
       }
     },
     "node_modules/@humanwhocodes/config-array": {
@@ -2354,17 +2362,6 @@
       "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
       "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
       "dev": true
-    },
-    "node_modules/busboy": {
-      "version": "1.6.0",
-      "resolved": "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz",
-      "integrity": "sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==",
-      "dependencies": {
-        "streamsearch": "^1.1.0"
-      },
-      "engines": {
-        "node": ">=10.16.0"
-      }
     },
     "node_modules/callsites": {
       "version": "3.1.0",
@@ -8108,14 +8105,6 @@
         "readable-stream": "^2.1.4"
       }
     },
-    "node_modules/streamsearch": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz",
-      "integrity": "sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==",
-      "engines": {
-        "node": ">=10.0.0"
-      }
-    },
     "node_modules/string_decoder": {
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz",
@@ -8724,11 +8713,11 @@
       }
     },
     "node_modules/undici": {
-      "version": "5.22.1",
-      "resolved": "https://registry.npmjs.org/undici/-/undici-5.22.1.tgz",
-      "integrity": "sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==",
+      "version": "5.26.2",
+      "resolved": "https://registry.npmjs.org/undici/-/undici-5.26.2.tgz",
+      "integrity": "sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==",
       "dependencies": {
-        "busboy": "^1.6.0"
+        "@fastify/busboy": "^2.0.0"
       },
       "engines": {
         "node": ">=14.0"
@@ -9915,6 +9904,11 @@
       "integrity": "sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==",
       "dev": true
     },
+    "@fastify/busboy": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/@fastify/busboy/-/busboy-2.0.0.tgz",
+      "integrity": "sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ=="
+    },
     "@humanwhocodes/config-array": {
       "version": "0.11.11",
       "resolved": "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.11.tgz",
@@ -10937,14 +10931,6 @@
       "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
       "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
       "dev": true
-    },
-    "busboy": {
-      "version": "1.6.0",
-      "resolved": "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz",
-      "integrity": "sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==",
-      "requires": {
-        "streamsearch": "^1.1.0"
-      }
     },
     "callsites": {
       "version": "3.1.0",
@@ -15267,11 +15253,6 @@
         "readable-stream": "^2.1.4"
       }
     },
-    "streamsearch": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz",
-      "integrity": "sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg=="
-    },
     "string_decoder": {
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz",
@@ -15706,11 +15687,11 @@
       "optional": true
     },
     "undici": {
-      "version": "5.22.1",
-      "resolved": "https://registry.npmjs.org/undici/-/undici-5.22.1.tgz",
-      "integrity": "sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==",
+      "version": "5.26.2",
+      "resolved": "https://registry.npmjs.org/undici/-/undici-5.26.2.tgz",
+      "integrity": "sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==",
       "requires": {
-        "busboy": "^1.6.0"
+        "@fastify/busboy": "^2.0.0"
       }
     },
     "universalify": {

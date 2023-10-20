@@ -1,0 +1,54 @@
+{
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {"name":"Python-Modul","type":"python","request":"launch","module":"MacDebug","justMyCode":true},
+    {
+      "type": "robotframework-lsp",
+      "name": "Robot Framework: Launch template",
+      "request": "launch"
+    },
+    {
+      "name": "Python: Aktuelle Datei",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Flask",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "app.py",
+        "FLASK_DEBUG": "1"
+      },
+      "args": ["run", "--no-debugger", "--no-reload"],
+      "jinja": true,
+      "justMyCode": true
+    },
+    {
+      "name": "Attach to Kubernetes Pod (.NET Core)",
+      "type": "cloudcode.kubernetes",
+      "request": "attach",
+      "language": "NETCore",
+      "podSelector": {
+        "app": "deployment-name"
+      },
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "Path to the Remote Directory Containing the Program"
+    },
+    {
+      "name": "Embedded Debug",
+      "type": "embedded-debug",
+      "request": "launch",
+      "serialNumber": "${command:device-manager.getSerialNumber}",
+      "program": "${command:embedded-debug.getApplicationFile}",
+      "cmsisPack": "${command:device-manager.getDevicePack}"
+    }
+  ]
+}
